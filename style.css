@@ -1,0 +1,516 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #101A20 !important;
+    color: white;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    position: sticky !important;
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(20, 35, 43, 0.95) !important;
+    padding: 12px 20px;
+}
+
+.navbar a {
+    color: white !important;
+}
+
+.navbar-nav {
+    margin-left: 20px;
+}
+
+.nav-link:hover,
+.navbar-brand:hover {
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+
+.links2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto;
+}
+
+.links2 img {
+    width: 30px;
+    height: 30px;
+}
+
+/* =========================
+   HOME
+========================= */
+
+.intro-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+.about {
+    flex: 1;
+    padding: 30px;
+    color: white;
+}
+
+.about h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 1.2;
+}
+
+.about p {
+    font-size: 17px;
+    line-height: 1.7;
+    margin: 20px 0;
+}
+
+.profile-pic {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-pic img,
+.profile-pic2 img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 30px;
+    object-fit: cover;
+    box-shadow: 0 0 20px rgba(0, 150, 255, 0.15);
+}
+
+.profile-pic img:hover,
+.profile-pic2 img:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn {
+    border: 2px solid black;
+    border-radius: 50px !important;
+    padding: 10px 20px !important;
+    margin-top: 20px;
+}
+
+.btn1 {
+    background-color: rgb(7, 111, 222) !important;
+    color: white !important;
+    font-weight: bold !important;
+}
+
+.btn2 {
+    font-weight: bold !important;
+}
+
+.links {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.links img {
+    width: 30px;
+    height: 30px;
+}
+
+/* =========================
+   GENERAL HEADINGS
+========================= */
+
+.abt {
+    color: white;
+    width: 100%;
+}
+
+.ab {
+    text-align: center;
+    margin: 40px 0 25px;
+    font-weight: bold;
+}
+
+.con {
+    text-align: center;
+    margin: 40px 0 20px;
+}
+
+.abt-para {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.abt-para p {
+    padding: 25px;
+    margin: 20px auto;
+    line-height: 1.7;
+}
+
+/* =========================
+   ABOUT PAGE
+========================= */
+
+.about2 {
+    flex: 1;
+    color: white;
+    padding: 30px;
+}
+
+.about2 p {
+    line-height: 1.7;
+}
+
+.profile-pic2 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* =========================
+   SKILLS
+========================= */
+
+.all-skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.skils-box {
+    border: 1px solid #075b80;
+    border-radius: 10px;
+    padding: 15px;
+    min-width: 0;
+}
+
+.skils-box:hover {
+    box-shadow: 0 0 20px rgba(0, 150, 255, 0.15);
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: 0.3s;
+}
+
+.skils-box h4 {
+    margin: 10px;
+}
+
+.men-skils {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 10px;
+}
+
+.box {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.box:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: 0.3s;
+    box-shadow: 0 0 20px rgba(0, 150, 255, 0.15);
+}
+
+/* =========================
+   PROJECTS
+========================= */
+
+.project_headings {
+    margin: 20px 10px;
+}
+
+.pro_box {
+    display: block;
+}
+
+.pro_box p {
+    margin: 10px;
+    line-height: 1.6;
+}
+
+.btn-project {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.btn-project .btn {
+    margin-top: 0;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+#pp {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    text-align: center;
+}
+
+.info-box {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.msg-box1,
+.msg-box2 {
+    width: 100%;
+    max-width: 450px;
+    min-height: 350px;
+    height: auto;
+    border-radius: 30px;
+    box-shadow: 0 0 20px rgba(0, 150, 255, 0.15);
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.msg-box1 h3,
+.msg-box2 h3 {
+    margin: 15px 0;
+}
+
+.msg-box1 p,
+.msg-box2 p {
+    margin: 15px 0;
+}
+
+.ff {
+    padding: 15px;
+}
+
+.textarea1 {
+    margin-top: 15px;
+}
+
+.btnmsg {
+    margin-top: 20px !important;
+}
+
+/* =========================
+   SUGGESTION
+========================= */
+
+.sug-box {
+    width: 100%;
+    max-width: 600px;
+    min-height: 350px;
+    height: auto;
+    margin: 40px auto;
+}
+
+/* =========================
+   RESUME
+========================= */
+
+.resume-pdf {
+    display: block;
+    width: 100%;
+    height: 80vh;
+    border: none;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.foter {
+    color: white !important;
+    background-color: #101A20 !important;
+    margin-top: 40px;
+}
+
+.foter .links {
+    justify-content: center;
+}
+
+.foter .links img {
+    width: 50px;
+    height: 50px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 10px 15px;
+    }
+
+    .navbar-nav {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .links2 {
+        justify-content: center;
+        margin: 10px 0 0;
+    }
+
+    .intro-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 15px;
+        gap: 20px;
+    }
+
+    .about {
+        padding: 15px;
+    }
+
+    .about h1 {
+        font-size: 35px;
+    }
+
+    .about p {
+        font-size: 16px;
+    }
+
+    .profile-pic img,
+    .profile-pic2 img {
+        max-width: 350px;
+    }
+
+    .about2 {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .all-skills {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .skils-box {
+        margin: 5px;
+    }
+
+    .men-skils {
+        justify-content: center;
+    }
+
+    .btn-project {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-project .btn {
+        width: auto;
+    }
+
+    .info-box {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .msg-box1,
+    .msg-box2 {
+        width: 100%;
+        max-width: 450px;
+        margin: 15px auto;
+    }
+
+    .row .col {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .sug-box {
+        width: calc(100% - 30px);
+        margin: 20px auto;
+    }
+
+    .resume-pdf {
+        height: 70vh;
+    }
+
+    .foter .links img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+    .about h1 {
+        font-size: 28px;
+    }
+
+    .ab,
+    .con {
+        font-size: 28px;
+    }
+
+    .abt-para {
+        padding: 0 10px;
+    }
+
+    .abt-para p {
+        padding: 15px;
+    }
+
+    .profile-pic img,
+    .profile-pic2 img {
+        max-width: 300px;
+    }
+
+    .btn {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .links {
+        justify-content: center;
+    }
+}

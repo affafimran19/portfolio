@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Suggestions</title>
+
+    <link href="style.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="index.html">Home</a>
+
+            <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="resume.html">Resume</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="links2">
+
+                <a href="https://github.com/Haris7Nadeem">
+                    <img src="git.png" alt="GitHub">
+                </a>
+
+                <a href="https://github.com/Haris7Nadeem">
+                    <img src="link.png" alt="LinkedIn">
+                </a>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <main class="abt">
+
+        <h1 class="con">Suggestion Page</h1>
+
+
+        <div class="msg-box2 sug-box">
+
+            <h3>Project Suggestion</h3>
+
+            <p>
+                Please provide your suggestion below.
+            </p>
+
+            <div class="ff">
+
+                <div class="row g-2">
+
+                    <div class="col-12">
+
+                        <input
+                            type="text"
+                            id="name"
+                            class="form-control"
+                            placeholder="Name"
+                            aria-label="Name">
+
+                    </div>
+
+
+                    <div class="col-12">
+
+                        <input
+                            type="text"
+                            id="project"
+                            class="form-control"
+                            placeholder="Project Title"
+                            aria-label="Project Title">
+
+                    </div>
+
+
+                    <div class="col-12">
+
+                        <div class="form-floating">
+
+                            <textarea
+                                class="form-control textarea1"
+                                id="comment"
+                                placeholder="Leave a comment here"
+                                style="height: 100px"></textarea>
+
+                            <label for="comment">
+                                Comment
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-12">
+
+                        <button
+                            type="button"
+                            class="btn btn2 btn-outline-secondary btnmsg"
+                            onclick="clearSuggestionForm()">
+
+                            Send Message
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="card text-center foter">
+
+        <div class="card-header">
+            © Copyright All Rights Reserved
+        </div>
+
+        <div class="card-body">
+
+            <div class="links">
+
+                <a href="https://github.com/Haris7Nadeem">
+                    <img src="git.png" alt="GitHub">
+                </a>
+
+                <a href="https://github.com/Haris7Nadeem">
+                    <img src="link.png" alt="LinkedIn">
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        function clearSuggestionForm() {
+            document.getElementById("name").value = "";
+            document.getElementById("project").value = "";
+            document.getElementById("comment").value = "";
+        }
+    </script>
+
+</body>
+
+</html>
